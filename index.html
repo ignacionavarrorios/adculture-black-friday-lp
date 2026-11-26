@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Social Media Package | AdCulture Media Malta</title>
+<meta name="description" content="Black Friday offer for Maltese businesses: your entire social media department for €1,250 instead of €2,500.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sea:#060A1E; --sea-2:#0C1333; --acm:#0069FE; --acm-deep:#062A92; --sun:#FFD23F;
+  --stone:#F4EFE4; --ink:#0A1030; --mist:#A9B4DC; --line:rgba(160,180,255,.16);
+  --display:'Bricolage Grotesque','Figtree',system-ui,sans-serif; --body:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{background:var(--sea);color:#fff;font:500 17px/1.55 var(--body)}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:.96;letter-spacing:-.025em;font-weight:800;text-wrap:balance}
+h2{font-size:clamp(36px,6vw,72px)}
+h3{font-size:clamp(22px,2.4vw,28px);line-height:1.05}
+section{padding:clamp(72px,9vw,128px) 0;position:relative}
+.lead{color:var(--mist);font-size:clamp(17px,1.6vw,20px);max-width:60ch}
+.center{text-align:center}.center .lead{margin-inline:auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;text-decoration:none;
+  background:var(--sun);color:var(--ink);font:800 18px/1 var(--body);padding:19px 30px;border-radius:999px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(255,210,63,.38)}
+.btn.blue{background:var(--acm);color:#fff}.btn.blue:hover{box-shadow:0 14px 40px rgba(0,105,254,.5)}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(4px)}
+.pulse{animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,210,63,.55)}70%{box-shadow:0 0 0 18px rgba(255,210,63,0)}100%{box-shadow:0 0 0 0 rgba(255,210,63,0)}}
+
+/* brand stripe */
+.stripe{height:10px;background:linear-gradient(180deg,var(--sun) 0 45%,#fff 45% 65%,var(--acm) 65% 100%)}
+
+/* marquees */
+.marquee{overflow:hidden;white-space:nowrap;user-select:none}
+.marquee .track{display:inline-flex;width:max-content;animation:slide var(--speed,32s) linear infinite}
+.marquee.rev .track{animation-direction:reverse}
+@keyframes slide{to{transform:translateX(-50%)}}
+.marquee .item{display:inline-flex;align-items:center;gap:28px;padding-right:28px}
+.marquee .item::after{content:"";width:12px;height:12px;border-radius:50%;background:currentColor;opacity:.6}
+.topbar{background:var(--sun);color:var(--ink);font:800 14px/1 var(--display);text-transform:uppercase;letter-spacing:.04em;padding:11px 0}
+.topbar .item::after{width:6px;height:6px}
+.tapes{position:relative;height:220px;margin:10px 0;overflow:hidden}
+.tapes .marquee{position:absolute;left:-5%;width:110%;font:800 clamp(30px,5vw,58px)/1 var(--display);font-stretch:80%;text-transform:uppercase;padding:18px 0}
+.tapes .marquee:nth-child(1){top:36px;background:#fff;color:var(--acm);transform:rotate(-3.2deg)}
+.tapes .marquee:nth-child(2){top:78px;background:var(--acm);color:#fff;transform:rotate(2.6deg);box-shadow:0 20px 50px rgba(0,0,0,.45)}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(6,10,30,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+header img{height:34px;width:auto}
+.mini{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--mist)}
+.mini b{font:800 18px/1 var(--display);color:var(--sun);font-variant-numeric:tabular-nums}
+header .btn{padding:13px 22px;font-size:15px}
+
+/* hero */
+.hero{padding:34px 0 80px;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(720px 520px at 82% 18%,rgba(0,105,254,.55),transparent 68%),
+  radial-gradient(600px 480px at 4% 78%,rgba(6,42,146,.55),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;background:var(--acm);padding:8px 16px;border-radius:999px;font-weight:800;font-size:14px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--sun);animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.2}}
+h1{font-size:clamp(40px,min(5.4vw,8.4vh),80px);margin:16px 0 12px}
+h1 em{font-style:normal;color:var(--sun);white-space:nowrap}
+.prices{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:14px}
+.was{display:inline-block;font:700 clamp(28px,3.2vw,42px)/1 var(--display);color:var(--mist);position:relative}
+.was::after{content:"";position:absolute;left:-6%;right:-6%;top:52%;height:5px;background:var(--sun);transform:rotate(-9deg);transform-origin:left;animation:strike .6s .8s backwards}
+@keyframes strike{from{transform:rotate(-9deg) scaleX(0)}}
+.off{font-weight:800;background:#fff;color:var(--ink);border-radius:10px;padding:6px 12px;transform:rotate(-3deg)}
+.timer{margin:20px 0 20px}
+.timer p{font-weight:700;margin-bottom:12px}
+.clock{display:flex;gap:10px}
+.unit{min-width:86px;background:var(--sea-2);border:1px solid var(--line);border-radius:18px;padding:14px 10px 10px;text-align:center}
+.unit b{display:block;font:800 clamp(32px,4vw,48px)/1 var(--display);font-variant-numeric:tabular-nums}
+.unit span{font-size:12px;color:var(--mist);text-transform:uppercase;letter-spacing:.1em}
+.actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.handful{margin-top:16px;color:var(--mist);font-size:15px}
+.proofrow{display:flex;align-items:center;gap:16px;margin-top:28px;flex-wrap:wrap}
+.faces{display:flex}
+.faces img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:50% 30%;border:3px solid var(--sea);margin-left:-12px;background:var(--sea-2)}
+.faces img:first-child{margin-left:0}
+.stars{color:var(--sun);letter-spacing:3px;font-size:17px;line-height:1}
+.proofrow small{display:block;color:var(--mist);font-size:14px;margin-top:4px}
+.stage{position:relative;justify-self:center;width:min(360px,100%,44vh + 20px)}
+.phone{position:relative;border-radius:34px;overflow:hidden;background:#000;box-shadow:0 40px 90px rgba(0,0,0,.55);aspect-ratio:9/16;border:6px solid #fff}
+.phone video{width:100%;height:100%;object-fit:cover}
+.sound{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);white-space:nowrap}
+.sound.btn{padding:13px 20px;font-size:15px;background:#fff}
+.sound.btn:hover{transform:translateX(-50%) translateY(-2px)}
+.badge{position:absolute;top:-30px;right:-34px;width:118px;height:118px;z-index:2;border-radius:50%;background:var(--sun);color:var(--ink);display:grid;place-content:center;text-align:center;font:800 34px/.9 var(--display);animation:wobble 5s ease-in-out infinite;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+.badge small{font-size:15px}
+@keyframes wobble{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(8deg) scale(1.06)}}
+.chip{position:absolute;z-index:2;background:#fff;color:var(--ink);border-radius:18px;padding:12px 16px;box-shadow:0 18px 40px rgba(0,0,0,.4);animation:float 6s ease-in-out infinite}
+.chip b{display:block;font:800 26px/1 var(--display);color:var(--acm)}
+.chip span{font-size:13px;font-weight:700}
+.chip.a{left:-62px;top:22%}.chip.b{right:-46px;bottom:18%;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-14px)}}
+
+/* counters */
+.stats{padding:64px 0;background:var(--acm)}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat b{display:block;font:800 clamp(46px,7vw,96px)/.95 var(--display);font-stretch:85%;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+.stat span{font-weight:700;font-size:16px}
+
+/* problem */
+.problem h2{max-width:16ch}
+.trio{display:flex;gap:14px;flex-wrap:wrap;margin:40px 0 24px}
+.trio span{border:1.5px solid var(--line);border-radius:999px;padding:14px 24px;font:700 clamp(18px,2.4vw,26px)/1 var(--display);background:var(--sea-2)}
+.unseen{font:800 clamp(28px,4.4vw,54px)/1.08 var(--display);max-width:20ch}
+.unseen mark{background:var(--sun);color:var(--ink);padding:0 .15em;border-radius:8px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+
+/* department */
+.dept{background:var(--sea-2)}
+.dept .head{display:grid;gap:18px;margin-bottom:48px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border-radius:28px;overflow:hidden;background:var(--sea);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--acm)}
+.card .pic{aspect-ratio:4/3.4;overflow:hidden}
+.card .pic video{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .pic video{transform:scale(1.06)}
+.card .txt{padding:24px;display:grid;gap:10px}
+.card p{color:var(--mist)}
+
+/* video wall */
+.wall{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+.vid{border-radius:26px;overflow:hidden;background:var(--sea-2);border:1px solid var(--line);display:flex;flex-direction:column}
+.vid .frame{position:relative;aspect-ratio:4/5;background:#000}
+.vid .frame img,.vid .frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.vid .frame video{object-fit:contain}
+.play{position:absolute;inset:0;width:100%;border:0;background:linear-gradient(transparent 55%,rgba(6,10,30,.72));cursor:pointer;color:#fff}
+.play i{position:absolute;left:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:var(--sun);display:grid;place-items:center;transition:transform .25s}
+.play i::after{content:"";border-left:18px solid var(--ink);border-block:11px solid transparent;margin-left:5px}
+.play:hover i{transform:scale(1.14)}
+.vid figcaption{padding:20px;display:grid;gap:8px}
+.vid q{font:700 20px/1.22 var(--display);quotes:"\201C" "\201D"}
+.vid cite{font-style:normal;color:var(--mist);font-size:14px}
+.vid cite b{color:#fff;display:block;font-size:16px}
+
+/* written reviews */
+.reviews{background:var(--stone);color:var(--ink)}
+.reviews .lead{color:#49527A}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;height:680px;overflow:hidden;margin-top:48px;
+  -webkit-mask-image:linear-gradient(transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(transparent,#000 9%,#000 91%,transparent)}
+.col .rail{display:flex;flex-direction:column;animation:rise var(--speed,46s) linear infinite}
+.col:hover .rail{animation-play-state:paused}
+@keyframes rise{to{transform:translateY(-50%)}}
+.rev-card{background:#fff;border-radius:22px;padding:24px;margin-bottom:18px;box-shadow:0 10px 30px rgba(10,16,48,.08)}
+.rev-card .stars{color:#F2A900}
+.rev-card p{margin:12px 0 16px;font-size:16px}
+.rev-card b{display:block}
+.rev-card span.who{font-size:14px;color:#5C668C}
+.names{margin-top:56px;font:800 clamp(24px,3.6vw,42px)/1 var(--display);font-stretch:82%;color:var(--ink);display:grid;gap:18px}
+
+/* offer */
+.offer-box{border-radius:36px;overflow:hidden;background:linear-gradient(150deg,#0A1450,#062A92 55%,var(--acm));box-shadow:0 40px 90px rgba(0,0,0,.45)}
+.offer-in{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;padding:clamp(28px,5vw,64px)}
+.big{font:800 clamp(84px,13vw,176px)/.85 var(--display);color:var(--sun);font-stretch:85%;margin:14px 0 6px;letter-spacing:-.04em}
+.incl{list-style:none;display:grid;gap:14px;margin-bottom:30px}
+.incl li{display:flex;gap:14px;align-items:flex-start;font-weight:700;font-size:19px}
+.incl li::before{content:"✓";flex:none;width:28px;height:28px;border-radius:50%;background:#fff;color:var(--acm);display:grid;place-items:center;font-size:15px;font-weight:800}
+.offer-in .unit{background:rgba(6,10,30,.5)}
+.offer-in .btn{width:100%}
+
+/* founders */
+.founders{display:grid;grid-template-columns:1fr auto auto;gap:36px;align-items:center}
+.founder{text-align:center}
+.founder img{width:190px;height:190px;border-radius:50%;object-fit:cover;border:5px solid var(--acm);background:var(--sea-2);margin:0 auto 14px}
+.founder span{display:block;color:var(--mist);font-size:14px}
+
+/* form */
+.apply{background:var(--sea-2)}
+.apply .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+form{background:#fff;color:var(--ink);border-radius:30px;padding:clamp(22px,3.4vw,40px);display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:grid;gap:7px;font-weight:700;font-size:14px}
+label.full,form .btn,form .note{grid-column:1/-1}
+input,select{width:100%;font:500 16px var(--body);color:var(--ink);padding:15px 16px;border-radius:14px;border:1.5px solid #D6DBEE;background:#F8F9FE}
+input:focus,select:focus{border-color:var(--acm);outline:3px solid rgba(0,105,254,.2)}
+form .note{font-size:14px;color:#5C668C;text-align:center;min-height:1.4em}
+
+footer{padding:44px 0 130px;border-top:1px solid var(--line);color:var(--mist);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer img{height:30px}
+
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;align-items:center;justify-content:space-between;gap:12px;background:rgba(12,19,51,.95);border:1px solid var(--line);border-radius:999px;padding:8px 8px 8px 20px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.dock .btn{padding:14px 20px;font-size:15px}
+.dock.hide{display:none!important}
+
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  h1{font-size:clamp(40px,9vw,76px)}
+  .stage{width:min(360px,100%)}
+  .hero .wrap,.offer-in,.apply .wrap{grid-template-columns:1fr}
+  .stage{margin-top:26px}
+  .stats .grid{grid-template-columns:1fr 1fr}
+  .cards{grid-template-columns:1fr}
+  .wall{grid-template-columns:1fr 1fr}
+  .cols{grid-template-columns:1fr 1fr}
+  .founders{grid-template-columns:1fr 1fr}.founders>div:first-child{grid-column:1/-1}
+  .dock{display:flex}
+  header .mini{display:none}
+}
+@media (max-width:620px){
+  .wrap{width:calc(100% - 32px)}
+  .wall,.cols,form{grid-template-columns:1fr}
+  .unit{min-width:0;flex:1}
+  .chip.a{left:-8px}.chip.b{right:-8px}
+  .badge{right:-6px;width:96px;height:96px;font-size:28px}
+  .founder img{width:136px;height:136px}
+  .actions .btn{width:100%}
+  .unit span{font-size:10px;letter-spacing:.03em}
+  .dock{padding-left:16px}
+  .dock .mini{gap:6px;white-space:nowrap}.dock .mini b{font-size:16px}.dock .mini span{display:none}
+  .dock .btn{white-space:nowrap;padding:13px 16px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  .was::after{transform:rotate(-9deg)}
+  .marquee{overflow-x:auto}
+  .cols{height:auto;-webkit-mask-image:none;mask-image:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar marquee" style="--speed:30s" data-marquee="Black Friday 50% off|€2,500 now €1,250|Only a small handful of businesses|Your entire social media department|Apply before the timer hits zero"></div>
+
+<header>
+  <div class="wrap">
+    <img src="/assets/acm-white.png" alt="AdCulture Media">
+    <div class="mini"><span data-short>Black Friday price ends in</span><b data-mini>--</b></div>
+    <a class="btn blue" href="#apply" data-cta>Apply now</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><i></i>Black Friday offer for businesses in Malta</span>
+      <h1>Your entire social media department for <em>€1,250</em></h1>
+      <div class="prices"><span class="was">€2,500</span><span class="off">50% off this month</span></div>
+      <p class="lead">You've already built a business. We create content designed to turn attention into real business opportunity, so Malta knows you exist.</p>
+      <div class="timer">
+        <p data-label>Black Friday price ends in</p>
+        <div class="clock" data-clock></div>
+      </div>
+      <div class="actions">
+        <a class="btn pulse" href="#apply" data-cta>Apply now <span class="arr">→</span></a>
+        <a class="btn ghost" href="#clients">Hear from clients</a>
+      </div>
+      <p class="handful">We're only taking on a small handful of businesses.</p>
+      <div class="proofrow">
+        <div class="faces" data-faces></div>
+        <div><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><small>Business owners we've worked with</small></div>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="badge" aria-hidden="true">50%<small>OFF</small></div>
+      <div class="chip a"><b data-chip="3">50+</b><span>happy clients</span></div>
+      <div class="chip b"><b data-chip="0">10,000+</b><span>leads generated</span></div>
+      <div class="phone">
+        <video id="offerVideo" src="/assets/offer.mp4" poster="/assets/offer.jpg" autoplay muted loop playsinline preload="metadata"></video>
+        <button class="btn sound" id="soundBtn" type="button">▶ Watch with sound</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stripe"></div>
+
+<!-- Figures are the ones published on adculturemedia.com. Confirm them before running ads; set data-on="false" to hide the band. -->
+<section class="stats" id="stats" data-on="true">
+  <div class="wrap grid">
+    <div class="stat"><b data-count="10000" data-suffix="+">0</b><span>leads generated</span></div>
+    <div class="stat"><b data-count="5" data-prefix="€" data-suffix="M+">0</b><span>revenue generated for clients</span></div>
+    <div class="stat"><b data-count="4" data-suffix="x">0</b><span>average return on ad spend</span></div>
+    <div class="stat"><b data-count="50" data-suffix="+">0</b><span>happy clients</span></div>
+  </div>
+</section>
+
+<div class="tapes" aria-hidden="true">
+  <div class="marquee" style="--speed:26s" data-marquee="Black Friday|50% off|€1,250|Black Friday|50% off|€1,250"></div>
+  <div class="marquee rev" style="--speed:30s" data-marquee="Get seen in Malta|Apply now|Limited spots|Get seen in Malta|Apply now|Limited spots"></div>
+</div>
+
+<section class="problem">
+  <div class="wrap">
+    <h2 class="reveal">There are businesses in Malta not even half as good as yours.</h2>
+    <p class="lead reveal" style="margin-top:24px">They're making money from customers who should have been yours. It's not because they're better than you. It's because they're being seen online.</p>
+    <div class="trio reveal"><span>Best product</span><span>Best service</span><span>Best team on the island</span></div>
+    <p class="unseen reveal">If nobody knows you exist, <mark>none of that matters.</mark></p>
+  </div>
+</section>
+
+<section class="dept">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>We become your entire social media department</h2>
+      <p class="lead">That's where we come in. Content made with a strategy behind it, built to turn attention into business.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal"><div class="pic"><video data-loop src="/assets/loop-create.mp4" poster="/assets/loop-create.jpg" muted loop playsinline preload="none" aria-label="A videographer filming content in a studio"></video></div><div class="txt"><h3>Content created for you</h3><p>Content made for your business, so people have a reason to notice you.</p></div></article>
+      <article class="card reveal"><div class="pic"><video data-loop src="/assets/loop-strategy.mp4" poster="/assets/loop-strategy.jpg" muted loop playsinline preload="none" aria-label="An editor working on a video"></video></div><div class="txt"><h3>Strategically designed</h3><p>Every piece is planned around the opportunity it should create.</p></div></article>
+      <article class="card reveal"><div class="pic"><video data-loop src="/assets/loop-attention.mp4" poster="/assets/loop-attention.jpg" muted loop playsinline preload="none" aria-label="A phone scrolling through social media videos"></video></div><div class="txt"><h3>To turn attention into opportunity</h3></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="clients">
+  <div class="wrap">
+    <div class="center reveal">
+      <h2>Hear it from business owners</h2>
+      <p class="lead" style="margin-top:18px">Press play. These are people we've worked with on their marketing.</p>
+    </div>
+    <div class="wall" data-wall></div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="center reveal">
+      <h2>And in their own words</h2>
+      <p class="lead" style="margin-top:18px">Hover to pause and read.</p>
+    </div>
+    <div class="cols" data-reviews></div>
+  </div>
+  <div class="names">
+    <div class="marquee" style="--speed:34s" data-marquee="Key Homes|ISD Solar|My Way Restaurant|Cash Buyers EU|Hamane Restaurant|Cash Corner EU|Power Circle|Blue Magic Group"></div>
+    <div class="marquee rev" style="--speed:38s" data-marquee="Right Homes Real Estate|Alliance Mosta|360 Estate Group|Justin Galea Photography|Right Homes Real Estate|Alliance Mosta|360 Estate Group|Justin Galea Photography"></div>
+  </div>
+</section>
+
+<div class="tapes" aria-hidden="true">
+  <div class="marquee rev" style="--speed:28s" data-marquee="€2,500 now €1,250|Black Friday|€2,500 now €1,250|Black Friday"></div>
+  <div class="marquee" style="--speed:24s" data-marquee="50% off this month|Small handful only|50% off this month|Small handful only"></div>
+</div>
+
+<section id="offer">
+  <div class="wrap">
+    <div class="offer-box reveal">
+      <div class="stripe"></div>
+      <div class="offer-in">
+        <div>
+          <h2>The Black Friday package</h2>
+          <div class="big">€1,250</div>
+          <div class="prices"><span class="was">€2,500</span><span class="off">You save €1,250</span></div>
+          <div class="timer"><p data-label>Black Friday price ends in</p><div class="clock" data-clock></div></div>
+        </div>
+        <div style="align-self:center">
+          <ul class="incl">
+            <li>Your entire social media department</li>
+            <li>Content created for your business</li>
+            <li>A strategy to turn attention into opportunity</li>
+            <li>50% off this month only</li>
+          </ul>
+          <a class="btn pulse" href="#apply" data-cta>Apply now <span class="arr">→</span></a>
+          <p class="handful">We're only taking on a small handful of businesses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap founders reveal">
+    <div><h2>Who you'll work with</h2><p class="lead" style="margin-top:18px">Daniel and Cody founded AdCulture Media to help service businesses grow.</p></div>
+    <div class="founder"><img src="https://adculturemedia.com/images/daniel.png" alt="Daniel" loading="lazy"><h3>Daniel</h3><span>Co-Founder and CEO</span></div>
+    <div class="founder"><img src="https://adculturemedia.com/images/cody.png" alt="Cody" loading="lazy"><h3>Cody</h3><span>Co-Founder and COO</span></div>
+  </div>
+</section>
+
+<section class="apply" id="apply">
+  <div class="wrap">
+    <div>
+      <h2>Apply for the Black Friday price</h2>
+      <p class="lead" style="margin:20px 0">Tell us about your business. We'll get back to you about the package.</p>
+      <div class="timer"><p data-label>Black Friday price ends in</p><div class="clock" data-clock></div></div>
+    </div>
+    <form id="form">
+      <label>Full name<input name="name" autocomplete="name" required></label>
+      <label>Business name<input name="business" autocomplete="organization" required></label>
+      <label>Phone or WhatsApp<input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      <label>What does your business do?<input name="industry" required></label>
+      <label>Instagram or website (optional)<input name="link"></label>
+      <button class="btn blue" type="submit" data-cta>Apply now <span class="arr">→</span></button>
+      <p class="note" id="note" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><img src="/assets/acm-white.png" alt="AdCulture Media"><span>© AdCulture Media · <a href="https://adculturemedia.com">adculturemedia.com</a> · <a href="mailto:info@adculturemedia.com">info@adculturemedia.com</a></span></div></footer>
+
+<div class="dock" id="dock"><div class="mini"><b data-mini>--</b><span>left</span></div><a class="btn" href="#apply" data-cta>Apply for €1,250</a></div>
+
+<script>
+/* ---- settings ---- */
+// Paste a form endpoint (e.g. a GoHighLevel inbound webhook URL) to receive applications.
+// While empty, the form opens the visitor's email app with the application filled in.
+const FORM_ENDPOINT = '';
+// Malta time (CET). The timer moves to the next deadline automatically.
+const DEADLINES = [
+  { end: '2026-11-30T23:59:59+01:00', label: 'Black Friday price ends in' },
+  { end: '2026-12-10T23:59:59+01:00', label: 'Extended: Black Friday price now ends in' }
+];
+
+const SITE = 'https://adculturemedia.com/videos/';
+const POSTER = 'https://ad-culture-media-vsl.lovable.app/__l5e/assets-v1/';
+const VIDEOS = [
+  { name:'Daniel Cassar', role:'Founder, Key Homes Real Estate Agency', q:'We saw a noticeable difference in less than 24 hours.', src:SITE+'daniel-cassar-testimonial.mp4', img:POSTER+'b34e80de-cfb6-4d71-b0f3-498761806a8c/testimonial-t4-poster.jpg' },
+  { name:'Brendan Borg', role:'Sales Director, ISD Solar', q:'A team that actually delivers and moves fast.', src:SITE+'brendan-borg-testimonial.mp4', img:POSTER+'4dd22fe4-3d32-4282-8125-930143c9d99a/testimonial-t2-poster.jpg' },
+  { name:'Mehdi', role:'Founder, Right Homes Real Estate', q:'Most companies waste a lot of money on Facebook advertising, and so did we.', src:'/assets/t-mehdi.mp4', img:'/assets/t-mehdi.jpg' },
+  { name:'Justin Galea', role:'Photographer, Justin Galea Photography', q:'They completely changed the way I look at growing my brand.', src:SITE+'justin-galea-testimonial.mp4', img:POSTER+'e927bab1-2061-4063-bbb0-5f2a61c186bc/testimonial-t1-poster.jpg' },
+  { name:'360 Estate Group', role:'Real estate agency', q:'In all cases they have given us exceptional value.', src:'/assets/t-360.mp4', img:'/assets/t-360.jpg' },
+  { name:'Marco Riccardi', role:'Marketing Agency Owner and Advisor', q:'These guys are savages when it comes to execution.', src:SITE+'marco-riccardi-testimonial.mp4', img:POSTER+'7c7e286e-5f6e-4e70-8ebe-dd6c08b4436d/testimonial-t5-poster.jpg' },
+  { name:'Pasquale Minasi', role:'Founder, Blue Magic Group', q:'Daniel and Cody know exactly what they’re doing.', src:SITE+'pasquale-minasi-testimonial.mp4', img:POSTER+'981227c0-75a5-42a3-9661-25e1b2b6bbfd/testimonial-t3-poster.jpg' },
+  { name:'Alliance Mosta', role:'Real estate agency', q:'We’ve started to see some great results.', src:'/assets/t-alliance.mp4', img:'/assets/t-alliance.jpg' },
+  { name:'Neal Ebejer', role:'Real Estate Specialist', q:'They didn’t hold anything back.', src:SITE+'neal-ebejer-testimonial.mp4', img:POSTER+'64f62891-ba63-4b79-9c74-7baf5cc2496b/testimonial-t6-poster.jpg' }
+];
+
+const REVIEWS = [
+  ['Daniel Cassar','Founder, Key Homes Real Estate Agency','Cody and Denny came to our office and helped our team understand Meta Ads on a much deeper level. Their patience, dedication, and expertise made a huge impact, and we saw a noticeable difference in less than 24 hours. They’re absolute legends at what they do. I highly recommend them and look forward to working together again in the future.'],
+  ['Jazeer Khan','Founder, Cash Buyers & Cash Corner EU','Had a fantastic experience with Ad Culture! Daniel was superb from start to finish. From the website they created us to the posts on social media, and lead generation, they exceeded expectations over the past 9 months. Daniel’s expertise and dedication drove tangible results, and we’re thrilled with the outcome! Highly recommend!'],
+  ['Brendan Borg','Sales Director, ISD Solar & Home Appliance Company','What impressed me most about Denny and Cody from Ad Culture Media is their ability to execute. They delivered exceptional lead generation results for our business, implemented GoHighLevel CRM in record time, and were instrumental in helping bring the Power Circle project to life from zero. If you’re looking for a team that actually delivers and moves fast, I highly recommend working with them.'],
+  ['Yassine Hamane','Founder, My Way & Hamane Restaurants','Daniel and his team has been a great help in getting our business noticed. Their marketing strategies are well thought out and effective, and the team is always responsive and professional. Highly recommend their services!'],
+  ['Justin Galea','Photographer, Justin Galea Photography','From the moment I met Danny and Cody, I could tell they were genuine and truly passionate about helping businesses grow. In just one hour of sitting down with them, I learned more about marketing, social media strategy, and lead generation than I had in a very long time. They completely changed the way I look at growing my brand. If you’re serious about scaling your business and reaching the right audience, I highly recommend working with them.'],
+  ['Pasquale Minasi','Founder, Blue Magic Group','Daniel and Cody know exactly what they’re doing. What impresses me most is their hunger to constantly learn, test new strategies, and bring fresh ideas to the table. They are extremely proactive and focused on one thing: helping businesses generate more leads, more sales, and more revenue. I’ve collaborated with them for quite some time now and I’m very happy with the results. If you’re serious about growing your business, they’re the people to work with.'],
+  ['Marco Riccardi','Marketing Agency Owner and Advisor','The market is huge, and it’s important to recognise marketing professionals who truly know what they’re doing. After meeting Daniel and Cody, I can confidently say these guys are savages when it comes to execution. Their level of focus, discipline, testing, and strategy implementation is incredible. They combine creativity, accountability, and deep marketing expertise to help businesses genuinely scale. If you have the chance to work with them, trust their process and let them do what they do best. The results will speak for themselves.'],
+  ['Neal Ebejer','Real Estate Specialist','I had the pleasure of doing a consultation with Dan and Cody from Ad Culture Media, and the value they provided was incredible. They shared powerful insights on how to properly set up and manage Facebook ads, and they didn’t hold anything back. Their knowledge and willingness to genuinely help stood out immediately. If you’re considering working with them, I highly recommend it. You’ll gain real clarity and see great results.'],
+  ['Mehdi','Founder, Right Homes Real Estate','We sat down with AdCulture Media and they ran a Facebook mastermind for my team. We covered the best ways to structure Facebook campaigns, how to target the right clients and how to make the best use of our budgets.'],
+  ['Alliance Mosta','Real estate agency','All the agents have positive feedback and we’ve started to see some great results as well. If you’re thinking about it, I suggest you go for it.'],
+  ['360 Estate Group','Real estate agency','If you are literally a company which you do not have a marketing system, or you do have a marketing system and you want to improve it, Daniel and Cody are the people for you.']
+];
+
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+/* marquees: repeat the items until one half is wider than the screen, then duplicate it */
+$$('[data-marquee]').forEach(m => {
+  const items = m.dataset.marquee.split('|');
+  const half = [...items, ...items].map(t => `<span class="item">${t}</span>`).join('');
+  m.innerHTML = `<div class="track">${half}${half}</div>`;
+});
+
+/* countdown */
+const fake = new URLSearchParams(location.search).get('now');           // preview any date: ?now=2026-12-02T10:00:00+01:00
+const offset = fake ? Date.parse(fake) - Date.now() : 0;
+$$('[data-clock]').forEach(c => c.innerHTML = ['Days','Hours','Minutes','Seconds'].map(u => `<div class="unit"><b>00</b><span>${u}</span></div>`).join(''));
+let closed = false;
+function tick() {
+  const now = Date.now() + offset;
+  const d = DEADLINES.find(x => Date.parse(x.end) > now);
+  const left = d ? Date.parse(d.end) - now : 0;
+  const parts = [left / 864e5, (left / 36e5) % 24, (left / 6e4) % 60, (left / 1e3) % 60].map(n => String(Math.floor(n)).padStart(2, '0'));
+  $$('[data-clock]').forEach(c => $$('b', c).forEach((b, i) => b.textContent = parts[i]));
+  $$('[data-mini]').forEach(m => m.textContent = d ? `${+parts[0]}d ${parts[1]}h ${parts[2]}m ${parts[3]}s` : 'Closed');
+  const label = d ? d.label : 'The Black Friday offer has closed';
+  $$('[data-label]').forEach(p => p.textContent = label);
+  $('[data-short]').textContent = d ? label : 'Black Friday offer';
+  if (!d && !closed) { closed = true; $$('[data-cta]').forEach(b => b.textContent = 'Apply for the next intake'); }
+}
+tick(); setInterval(tick, 1000);
+
+/* faces */
+$('[data-faces]').innerHTML = VIDEOS.slice(0, 7).map(v => `<img src="${v.img}" alt="">`).join('');
+
+/* video wall */
+VIDEOS.forEach(v => {
+  const fig = el('figure', 'vid reveal', `<div class="frame"><img src="${v.img}" alt="${v.name}" loading="lazy"><button class="play" type="button" aria-label="Play ${v.name}'s testimonial"><i></i></button></div><figcaption><q>${v.q}</q><cite><b>${v.name}</b>${v.role}</cite></figcaption>`);
+  $('.play', fig).addEventListener('click', () => {
+    const video = el('video');
+    Object.assign(video, { src: v.src, controls: true, autoplay: true, playsInline: true });
+    $('.frame', fig).replaceChildren(video);
+    video.focus();
+  });
+  $('[data-wall]').appendChild(fig);
+});
+/* only one video with sound at a time */
+document.addEventListener('play', e => $$('video').forEach(v => { if (v !== e.target && !v.muted) v.pause(); }), true);
+
+/* written reviews in scrolling columns: 3, 2 or 1 depending on width, every review shown */
+const columns = matchMedia('(max-width:620px)').matches ? 1 : matchMedia('(max-width:980px)').matches ? 2 : 3;
+for (let i = 0; i < columns; i++) {
+  const cards = REVIEWS.filter((_, n) => n % columns === i).map(r => `<article class="rev-card"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>${r[2]}</p><b>${r[0]}</b><span class="who">${r[1]}</span></article>`).join('');
+  const speed = columns === 1 ? 110 : [62, 48, 56][i];
+  $('[data-reviews]').appendChild(el('div', 'col', `<div class="rail" style="--speed:${speed}s">${cards}<div aria-hidden="true">${cards}</div></div>`));
+}
+
+/* reveal + counters */
+if ($('#stats').dataset.on !== 'true') { $('#stats').remove(); $$('.chip').forEach(c => c.remove()); }
+const io = new IntersectionObserver(entries => entries.forEach(e => {
+  if (!e.isIntersecting) return;
+  io.unobserve(e.target);
+  if (e.target.dataset.count) count(e.target); else e.target.classList.add('in');
+}), { threshold: .15 });
+$$('.reveal, [data-count]').forEach(n => io.observe(n));
+function count(node) {
+  const end = +node.dataset.count, pre = node.dataset.prefix || '', suf = node.dataset.suffix || '', t0 = performance.now();
+  const step = t => {
+    const p = Math.min((t - t0) / 1600, 1), n = Math.round(end * (1 - Math.pow(1 - p, 3)));
+    node.textContent = pre + n.toLocaleString('en-GB') + suf;
+    if (p < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+/* service loops play only while visible */
+const loops = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause()), { threshold: .25 });
+$$('video[data-loop]').forEach(v => loops.observe(v));
+
+/* hero video sound */
+$('#soundBtn').addEventListener('click', () => {
+  const v = $('#offerVideo');
+  v.muted = false; v.loop = false; v.controls = true; v.currentTime = 0; v.play();
+  $('#soundBtn').remove();
+});
+
+/* hide the mobile dock while the form is on screen */
+new IntersectionObserver(([e]) => $('#dock').classList.toggle('hide', e.isIntersecting), { threshold: .05 }).observe($('#apply'));
+
+/* application form */
+$('#form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(e.target)), note = $('#note');
+  data.offer = 'Black Friday social media package';
+  if (!FORM_ENDPOINT) {
+    const body = Object.entries(data).map(([k, v]) => `${k}: ${v}`).join('\n');
+    location.href = `mailto:info@adculturemedia.com?subject=${encodeURIComponent('Black Friday application: ' + data.business)}&body=${encodeURIComponent(body)}`;
+    note.textContent = 'Your email app should open with your application. Press send to finish.';
+    return;
+  }
+  note.textContent = 'Sending...';
+  try {
+    const res = await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+    if (!res.ok) throw new Error(res.status);
+    e.target.reset();
+    note.textContent = 'Application received. We’ll be in touch.';
+  } catch {
+    note.textContent = 'That didn’t send. Please try again or email info@adculturemedia.com.';
+  }
+});
+</script>
+</body>
+</html>
