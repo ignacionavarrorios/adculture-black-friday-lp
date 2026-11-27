@@ -15,3 +15,7 @@ npm run dev
 ## Check before publishing
 - Counter figures come from adculturemedia.com. Confirm them.
 - Six testimonial videos load from adculturemedia.com and their posters from ad-culture-media-vsl.lovable.app. Copy them into `public/assets/` if those sites change.
+
+## Booking confirmation email
+
+`public/emails/booking-confirmation.html` is the email sent from GoHighLevel to everyone who books a call (GHL merge tags, table layout, inline styles). Lovable prompt: `LOVABLE-PROMPT-EMAIL.md`.
